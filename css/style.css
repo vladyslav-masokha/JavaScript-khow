@@ -57,24 +57,19 @@ a {
   font-weight: 700;
   font-size: 24px;
 }
-
 .logo span.logo-words {
   color: #24a3ff;
 }
-
 .logo a {
   color: #ffd700;
 }
-
 .logo span {
   color: #ff5c5c;
 }
-
-.navigation {
+.logo .navigation {
   padding: 0;
 }
-
-.navigation:active {
+.logo .navigation:active {
   background: #95959c;
   border-radius: 8px;
   -webkit-transition: all 0.3s ease;
@@ -88,7 +83,6 @@ a {
   cursor: pointer;
   z-index: 2;
 }
-
 .burger span {
   display: block;
   width: 22px;
@@ -101,19 +95,15 @@ a {
   transition: all 0.3s linear;
   opacity: 1;
 }
-
 .burger span:first-child {
   top: 6px;
 }
-
 .burger span:nth-child(2) {
   top: 14px;
 }
-
 .burger span:nth-child(3) {
   top: 14px;
 }
-
 .burger span:last-child {
   top: 22px;
 }
@@ -288,6 +278,14 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
+}
+
+.methods-array-list span {
+  color: #289e7c;
+}
+
+.methods-array-list > ul > li > span > span {
+  color: #ff5c5c;
 }
 
 #footer {

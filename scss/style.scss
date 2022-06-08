@@ -44,28 +44,28 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
-}
 
-.logo span.logo-words {
-	color: #24a3ff;
-}
+	span.logo-words {
+		color: #24a3ff;
+	}
 
-.logo a {
-	color: #ffd700;
-}
+	a {
+		color: #ffd700;
+	}
 
-.logo span {
-	color: #ff5c5c;
-}
+	span {
+		color: #ff5c5c;
+	}
 
-.navigation {
-	padding: 0;
-}
+	.navigation {
+		padding: 0;
 
-.navigation:active {
-	background: #95959c;
-	border-radius: 8px;
-	transition: all 0.3s ease;
+		&:active {
+			background: #95959c;
+			border-radius: 8px;
+			transition: all 0.3s ease;
+		}
+	}
 }
 
 .burger {
@@ -74,34 +74,34 @@ a {
 	position: relative;
 	cursor: pointer;
 	z-index: 2;
-}
 
-.burger span {
-	display: block;
-	width: 22px;
-	height: 2px;
-	border-radius: 2px;
-	background: #98d4ff;
-	position: absolute;
-	left: 5px;
-	transition: all 0.3s linear;
-	opacity: 1;
-}
+	span {
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 2px;
+		background: #98d4ff;
+		position: absolute;
+		left: 5px;
+		transition: all 0.3s linear;
+		opacity: 1;
 
-.burger span:first-child {
-	top: 6px;
-}
+		&:first-child {
+			top: 6px;
+		}
 
-.burger span:nth-child(2) {
-	top: 14px;
-}
+		&:nth-child(2) {
+			top: 14px;
+		}
 
-.burger span:nth-child(3) {
-	top: 14px;
-}
+		&:nth-child(3) {
+			top: 14px;
+		}
 
-.burger span:last-child {
-	top: 22px;
+		&:last-child {
+			top: 22px;
+		}
+	}
 }
 
 .check-burger {
@@ -259,6 +259,14 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
+}
+
+.methods-array-list span {
+	color: #289e7c;
+}
+
+.methods-array-list > ul > li > span > span {
+	color: #ff5c5c;
 }
 
 // ! Footer
