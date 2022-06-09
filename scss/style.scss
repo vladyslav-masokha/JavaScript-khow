@@ -269,6 +269,58 @@ a {
 	color: #ff5c5c;
 }
 
+#dom-elements {
+	margin: 100px 0;
+	text-align: center;
+
+	h1 {
+		color: #49ffaf;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		margin: 20px 0;
+
+		span {
+			color: #ff5c5c;
+		}
+	}
+}
+
+.dom-elements-title {
+	h1 {
+		color: #ff0000;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+	}
+
+	p {
+		color: #eee;
+		margin-top: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+	}
+}
+
+.dom-elements-list {
+	li {
+		color: #8279ff;
+		padding-top: 10px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	span {
+		color: #289e7c;
+	}
+
+	> li > span > span {
+		color: #ff5c5c;
+	}
+}
+
 // ! Footer
 #footer {
 	margin-top: auto;
