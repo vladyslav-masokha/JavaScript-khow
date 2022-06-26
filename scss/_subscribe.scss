@@ -1,0 +1,78 @@
+.subscribe {
+	margin-top: 40px;
+	background: #eee;
+	&__body {
+		h2 {
+			color: #1f1f1f;
+			line-height: 30px;
+			font: {
+				size: 24px;
+				weight: 700;
+				family: $font-stack;
+			}
+		}
+	}
+	&__form {
+		margin: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		input[type='email'] {
+			width: 100vw;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 10px;
+		}
+
+		a {
+			border: none;
+			background: transparent;
+			margin-left: 2vw;
+
+			i {
+				color: #000;
+				font: {
+					size: 24px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.subscribe {
+		&__body {
+			h2 {
+				font: {
+					size: 40px;
+				}
+			}
+		}
+
+		&__form {
+			margin: 25px 0;
+			input[type='email'] {
+				padding: 15px 20px;
+			}
+
+			a {
+				i {
+					font: {
+						size: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.subscribe {
+		margin-top: 45px;
+
+		&__body {
+			padding: 25px 0;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.footer {
+	text-align: center;
+	background: #270021eb;
+	line-height: 19px;
+	padding: 10px 0;
+	font: {
+		size: 16px;
+		weight: 700;
+		family: $font-stack;
+	}
+
+	&__copyright {
+		span {
+			color: #eee;
+		}
+		p {
+			color: #2c5aff;
+		}
+	}
+}

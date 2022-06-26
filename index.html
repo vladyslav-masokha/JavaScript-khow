@@ -4,173 +4,214 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JavaScript know | New project</title>
-		<script src="./js/main.js" defer></script>
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/reset.css" />
+		<title>JavaScript know</title>
+		<!-- ? Icons Font Awesome-->
+		<script
+			src="https://kit.fontawesome.com/05616759dc.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- ! Fonts Montserrat (Regular / Bold) / Kdam Thmor Pro (Regular)-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@0,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--! CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
+		<!--! SCRIPTS -->
+		<script src="./js/main.js" defer></script>
+		<link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
 		<div id="page">
-			<header id="header">
-				<div class="wrapper">
-					<div class="header-container">
+			<!-- ? Header -->
+			<header class="header">
+				<div class="header__inner">
+					<div class="header__nav">
+						<!-- ? Logo -->
 						<div class="logo">
-							<a href="./index.html"
-								><span class="logo-words">Java</span>Script
-								<span>(know)</span></a
+							<a href="./index.html" class="logo__link"
+								>JavaScript <span>(know)</span></a
 							>
 						</div>
 
-						<span id="time"></span>
+						<!-- ? Clock -->
+						<span id="clock"></span>
+					</div>
 
-						<div class="sidebar">
-							<div class="contact">
-								<a href="tel:+380635040209">+380635040209</a>
-								<a href="mailto:animew1243@gmail.com">animew1243@gmail.com</a>
-							</div>
-
-							<div class="navigation">
-								<input type="checkbox" class="check-burger" />
-								<p class="burger">
-									<span></span>
-									<span></span>
-									<span></span>
-									<span></span>
-								</p>
-								<nav class="nav">
-									<span class="close">&times;</span>
-									<a href="./index.html" class="nav-link nav-active-link"
-										>Homepage</a
-									>
-									<a href="#methods-array" class="nav-link">Methods Array</a>
-									<a href="#dom-elements" class="nav-link">DOM elements</a>
-									<a
-										href="https://gilded-semolina-c3725c.netlify.app/index.html#methods-array"
-										class="nav-link jsdocument"
-										target="_blank"
-										>Array methods <span>(doc)</span></a
-									>
-									<a
-										href="https://gilded-semolina-c3725c.netlify.app/index.html#methods-object"
-										class="nav-link jsdocument"
-										target="_blank"
-										>Object methods <span>(doc)</span></a
-									>
-									<a
-										href="https://gilded-semolina-c3725c.netlify.app/index.html#function-declaration"
-										class="nav-link jsdocument"
-										target="_blank"
-										>Function declaration <span>(doc)</span></a
-									>
-									<a
-										href="https://gilded-semolina-c3725c.netlify.app/index.html#arrow-function"
-										class="nav-link jsdocument"
-										target="_blank"
-										>Arrow function <span>(doc)</span></a
-									>
-									<a
-										href="https://gilded-semolina-c3725c.netlify.app/"
-										class="nav-link jsdocument"
-										target="_blank"
-										><span>JavaScript documentation</span></a
-									>
-								</nav>
-							</div>
-						</div>
+					<!-- ? Navigation -->
+					<div class="navbar">
+						<input type="checkbox" id="check-burger" />
+						<p class="burger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</p>
+						<nav class="nav">
+							<span id="close-menu">&times;</span>
+							<a href="#about" class="nav__link nav__link-active">Home</a>
+							<a href="#methods-arrays" class="nav__link">Methods arrays</a>
+							<a href="#methods-objects" class="nav__link">Methods objects</a>
+							<a href="#dom-elements" class="nav__link">DOM elements</a>
+							<a
+								href="https://gilded-semolina-c3725c.netlify.app/"
+								target="_blank"
+								class="nav__link"
+								>JavaScript <span>(doc)</span></a
+							>
+						</nav>
 					</div>
 				</div>
 			</header>
 
-			<div id="methods-array">
+			<!-- ? About -->
+			<div class="about" id="about">
 				<div class="wrapper">
-					<div class="methods-array-inner">
-						<div class="array-methods-title">
-							<h1>JavaScript Array</h1>
-							<h3>Array Object</h3>
-							<p>
-								Array indexes are zero-based: The first element in the array is
-								0, the second is 1, and so on. For a tutorial about Arrays, read
-								our
-								<a
-									href="https://www.w3schools.com/js/js_arrays.asp"
-									target="_blank"
-									>JavaScript Array Tutorial</a
-								>.
-							</p>
+					<div class="about__body">
+						<div class="about__title">
+							<h1>What’s in Javascript?</h1>
+							<h3>JavaScript has arrays, functions, methods,etc.</h3>
+							<a href="#methods-arrays">More details</a>
 						</div>
-						<div class="methods-array-list">
-							<h1>Methods array <span>(know)</span></h1>
-							<ul>
-								<li>.concat()</li>
-								<li>.map()</li>
-								<li>.filter()</li>
-								<li>.unshift()</li>
-								<li>.push()</li>
-								<li>.reverse()</li>
-								<li>.pop()</li>
-								<li>.sort()</li>
-								<li>.shift()</li>
-								<li>.forEach()</li>
-								<li>.reduce()</li>
-								<li>.split()</li>
-								<li>
-									(<span>Know <span>12/30</span> methods array</span>)
-								</li>
-							</ul>
+						<div class="about__image">
+							<img src="./image/javascript.png" alt="JavaScript" />
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="dom-elements">
+			<!-- ? Methods arrays-->
+			<div class="methods-arrays" id="methods-arrays">
 				<div class="wrapper">
-					<div class="dom-elements-title">
-						<h1>DOM elements</h1>
-						<p>
-							The DOM is the way Javascript sees its containing pages' data. It
-							is an object that includes how the HTML/XHTML/XML is formatted, as
-							well as the browser state. A DOM element is something like a DIV,
-							HTML, BODY element on a page. You can add classes to all of these
-							using CSS, or interact with them using JS.
-						</p>
+					<div class="methods-arrays__body">
+						<div class="methods-arrays__title">
+							<h2>
+								Methods array
+								<span>(know)</span>
+							</h2>
+							<h3>All methods for arrays:</h3>
+						</div>
+						<div class="methods-arrays__content">
+							<div class="methods-arrays__columns">
+								<ul>
+									<li>.concat()</li>
+									<li>.filter()</li>
+									<li>.forEach()</li>
+									<li>.from()</li>
+									<li>.isArray()</li>
+									<li>.join()</li>
+									<li>.keys()</li>
+									<li>.map()</li>
+									<li>.pop()</li>
+									<li>.push()</li>
+									<li>.reduce()</li>
+									<li>.reverse()</li>
+									<li>.shift()</li>
+									<li>.sort()</li>
+									<li>.toString()</li>
+									<li>.unshift()</li>
+								</ul>
+							</div>
+							<div class="methods-arrays__image">
+								<img src="./image/methods-arrays.jpg" alt="arrays" />
+							</div>
+						</div>
 					</div>
-					<h1>DOM elements <span>(know)</span></h1>
-					<ul class="dom-elements-list">
-						<li>.createElement()</li>
-						<li>.createTextNode()</li>
-						<li>.getElementById()</li>
-						<li>.append()</li>
-						<li>.prepend()</li>
-						<li>.classList.add()</li>
-						<li>.classList.remove()</li>
-						<li>.getElementsByTagName()</li>
-						<li>.getElementsByClassName()</li>
-						<li>.querySelector()</li>
-						<li>.querySelectorAll()</li>
-						<li>.className</li>
-						<li>.innerHTML</li>
-						<li>.outerHTML</li>
-						<li>.insertAdjacentElement()</li>
-						<li>.insertAdjacentHTML()</li>
-						<li>.insertAdjacentText()</li>
-						<li>
-							(<span>Know <span>17/???</span> methods array</span>)
-						</li>
-					</ul>
 				</div>
 			</div>
 
-			<footer id="footer">
+			<!-- ? Methods objects -->
+			<div class="methods-objects" id="methods-objects">
 				<div class="wrapper">
-					<div class="copyright">
-						&copy;2022.
-						<span>Vladyslav Masokha</span>
-						<p>Content by <span>MDN</span>.</p>
+					<div class="methods-objects__body">
+						<div class="methods-objects__title">
+							<h2>
+								Methods objects
+								<span>(know)</span>
+							</h2>
+							<h3>All methods for arrays:</h3>
+						</div>
+						<div class="methods-objects__content">
+							<div class="methods-objects__column">
+								<ul>
+									<li>Object.keys()</li>
+								</ul>
+							</div>
+							<div class="methods-objects__column_image">
+								<img src="./image/Methods objects.jpg" alt="objects" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ? Subscribe -->
+			<div class="subscribe">
+				<div class="wrapper">
+					<div class="subscribe__body">
+						<h2>Subscribe</h2>
+						<div class="subscribe__form">
+							<input type="email" placeholder="Enter your email" />
+							<a href="./index.html">
+								<i class="fa-solid fa-arrow-right-from-bracket"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ? DOM elements -->
+			<div class="dom-elements" id="dom-elements">
+				<div class="wrapper">
+					<div class="dom-elements__body">
+						<div class="dom-elements__title">
+							<h2>
+								Interactions with DOM
+								<span>(know)</span>
+							</h2>
+
+							<h3>~ All interactions with DOM:</h3>
+						</div>
+						<div class="dom-elements__content">
+							<div class="dom-elements__column">
+								<ul>
+									<li>.createElement()</li>
+									<li>.createTextNode()</li>
+									<li>.getElementById()</li>
+									<li>.append()</li>
+									<li>.prepend()</li>
+									<li>.classList.add()</li>
+									<li>.classList.remove()</li>
+									<li>.getElementsByTagName()</li>
+									<li>.getElementsByClassName()</li>
+									<li>.querySelector()</li>
+									<li>.querySelectorAll()</li>
+									<li>.className</li>
+									<li>.innerHTML</li>
+									<li>.outerHTML</li>
+									<li>.insertAdjacentElement()</li>
+									<li>.insertAdjacentHTML()</li>
+									<li>.insertAdjacentText()</li>
+								</ul>
+							</div>
+							<div class="dom-elements__image">
+								<img src="./image/dom-class-hierarchy.svg" alt="dom" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- ? Footer -->
+			<footer class="footer">
+				<div class="wrapper">
+					<div class="footer__copyright">
+						<span>&copy;2022. Vladyslav Masokha</span>
+						<p>Content by MDN</p>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<script src="./js/jquery-3.6.0.min.js"></script>
 	</body>
 </html>
