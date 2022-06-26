@@ -49,6 +49,31 @@
 			display: none;
 		}
 	}
+
+	.mb-know {
+		span {
+			color: #eee;
+			display: flex;
+			justify-content: center;
+			margin: 20px 0 0 0;
+
+			font: {
+				size: 24px;
+				weight: 700;
+				family: $font-stack;
+			}
+
+			.k {
+				color: #ff4f4f;
+				margin: 0 10px;
+			}
+
+			.a {
+				color: #5dca5d;
+				margin: 0 10px;
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
